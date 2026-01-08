@@ -1,0 +1,224 @@
+:root {
+    --primary-color: #4f46e5;
+    --secondry-color:  #06b6d4;
+    --background-color: #ffffff;
+    --surface-color: #f8fafc;
+    --text-color: #1e293b;
+    --text-secondary: #64748b;
+    --border-color: #e2e8f0;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+     0 2px 4px -1px rgba(0, 0, 0, 0.06);
+     --transition: all 0.3s ease;
+     --card-bg: #ffffff;
+     --header-bg: #ffffff;
+     --hambuger-color: black;
+     --button-color: orange;
+     --overlay-bg: rgba(255, 255, 255, 0.5);
+}
+.darkTheme {
+    --primary-color: #818cf8;
+    --secondry-color:  #22d3ee;
+    --background-color: #0f172a;
+    --surface-color: #1e293b;
+    --text-color: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --border-color: #334155;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3),
+     0 2px 4px -1px rgba(0, 0, 0, 0.2);
+     --transition: all 0.3s ease;
+     --card-bg: #1e293b;
+     --header-bg: #1e293b;
+     --hambuger-color: white;
+     --button-color: #818cf8;
+     --overlay-bg: rgba(0, 0, 0, 0.5);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Poppins, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    border-radius: 20px;
+    background-color: var(--background-color);
+    padding:5px 10px;
+    align-items: center;
+    box-shadow: var(--shadow);
+    position: fixed;
+    top: 20px;
+    cursor: pointer;
+    z-index: 3;
+}
+.main{
+  width: 80%;
+}
+.navlink{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: small;
+    color: var(--text-color);
+}
+.navlinks{
+    display: flex;
+    gap: 15px;
+}
+.navlink:hover{
+    color: rgb(124, 85, 198);
+    text-decoration: double;
+}
+.theme-mobilemenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    position: relative;
+}
+.divopen{
+    width: 100%;
+    border: 1px solid var(--hambuger-color);
+
+}
+.h-open {
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+.h-close{
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+.divclose{
+    width: 100%;
+    position: absolute;
+    border: 1px solid var(--hambuger-color);
+    top: 50%;
+    left: 50%;
+}
+.hamburger{
+    display: none;
+}
+.close1{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.close2{
+     transform: translate(-50%, -50%) rotate(-45deg);
+}
+.mobilenav{
+    position: fixed;
+    height: 100vh;
+    width: 50%;
+    top: 0;
+    right: 0;
+    background-color: var(--background-color);
+    z-index: -1;
+    border-left: 1px solid;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+    padding: 120px 30px;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    background-color: var(--overlay-bg);
+
+}
+.leftHero{
+    z-index: 10;
+    position: relative;
+}
+.herotitle{
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+.me{
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+.rightHero, .leftHero{
+    flex: 1;
+}
+.rightHero{
+    display: flex;
+    justify-content: center;
+}
+.hbtnscontainer{
+    margin-top: 20px;
+}
+button {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+.mobilenavlinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 30px;
+}
+.mobilenavlink{
+    background-color: var(--border-color);
+    padding: 10px 50px;
+    text-align: center;
+    width: 70%;
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: bold;
+    font-size: 18px;
+}
+.hidden{
+    display: none;
+}
+@media (max-width: 500px) {
+    .hamburger {
+        display: block;
+    }
+    .navlinks{
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .rightHero {
+        display: none;
+    }
+    .hero {
+        background-image: url(images/WhatsApp\ Image\ 2025-11-19\ at\ 11.00.45\ AM.jpeg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: -1;
+    }
+    .main{
+       width: 100%;
+    }
+}
