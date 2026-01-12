@@ -236,7 +236,7 @@ button {
     padding: 5px; 
     margin: 5px 10px 5px 10px;
 }
-.forprojects{
+.projects{
     width: 330px;
     height: 470px;
     border-radius: 10px;
@@ -292,6 +292,9 @@ button {
         background-position: center;
         position: relative;
         z-index: -1;
+    }
+    .about{
+        margin: 25px;
     }
     .main{
        width: 100%;
