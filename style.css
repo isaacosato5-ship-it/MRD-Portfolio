@@ -45,7 +45,7 @@ body{
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: Poppins, sans-serif;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 header{
     display: flex;
@@ -205,14 +205,7 @@ button {
     text-align: center;
     font-size: 40px;
 }
-.first-p{
-    margin: 10px 0px 25px 0px;
-}
-.second-p{
-    margin: 0px 0px 20px 0px;
-}
 .for-divs{
-   padding: 20px;
    display: flex;
    flex-wrap: wrap;
    align-items: center;
@@ -220,28 +213,21 @@ button {
   
 }
 .dash{
-    width: 75px;
+    width: 90px;
     height: 4px;
     border-radius: 10px;
     background-color: var(--primary-color);
-    margin: 0 auto;
+    margin-left: 40%;
     margin-top: 5px;
 }
 .for-box{
     height: 30px;
-    width: 145px;
     border-radius: 20px;
     background-color: var(--surface-color);
     text-align: center;
     font-size: 12px;
     padding: 5px; 
     margin: 5px 10px 5px 10px;
-}
-.projects{
-    border-radius: 10px;
-    color: var(--text-color);
-    padding: 20px;
-    text-align: center;
 }
 .for-image{
     border-radius: 10px 10px 0 0;
@@ -254,18 +240,31 @@ button {
     margin-left: 15px;
     color: var(--text-color);
 }
-.projectparents{
-   max-width: 300px;
+.project{
+    padding: 20px;
+   flex-wrap: wrap;
 }
 .projects-cards-parent{
-    display: flex;
     gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+     flex-wrap: wrap;
     justify-content: center;
+    display: flex;
+    align-items: center;
+     margin-top: 30px;
+    padding-bottom: 10px;
 }
-.about, .projects{
+.projectparents{
+    box-shadow: var(--shadow);
+    width: 250px;
+}
+.sectiontitle{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.about{
     padding-top: 100px;
+    margin-left: 15px;
 }
 .skills{
      height: 30px;
@@ -275,11 +274,12 @@ button {
     text-align: center;
     font-size: 12px;
     padding: 5px; 
-    margin: 5px 10px 5px 10px;
+    margin: 5px 15px 5px 0px;
 }
 .parent{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .for-ecom{
     color: var(--primary-color);
@@ -289,13 +289,51 @@ button {
 .for-view{
     border-radius: 5px;
     margin-top: 10px;
+    margin: 0 auto;
 }
-
 .contact {
     position: static
 }
-.infos{
+.for-get{
     width: 450px;
+}
+.infos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    margin-top: 30px;
+}
+form{
+
+   justify-content: space-between;
+   padding: 10px 0px 0px 25px;
+   margin: 0px 0px 50px 0px;
+   height: 250px;
+   color: var(--text-color);
+   
+}
+.name, .email{
+    width: 400px;
+    height: 30px;
+    background-color: var(--surface-color);
+    border-radius: 5px;
+    border: 1px solid rgb(199, 193, 193);
+    margin: 0px 0px 10px 0px;
+    gap: 20px;
+    padding: 10px;
+    color: var(--text-color);
+
+}
+.message{
+    width: 400px;
+    height: 100px;
+    background-color: var(--surface-color);
+    border:1px rgb(199, 193, 193);
+    color: var(--text-color);
+
+}
+.stack{
+    /* display: flex; */
 }
 .contact-icon{
     border-radius: 50%;
@@ -321,7 +359,7 @@ button {
         display: none;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 495px) {
     .rightHero {
         display: none;
     }
@@ -330,19 +368,29 @@ button {
         background-size: cover;
         background-position: center;
         position: relative;
+        width: 480px;
         z-index: -1;
-    }
-    .about{
-        /* margin: 25px; */
-        font-size: 15px;
     }
     .main{
        width: 100%;
     }
-    .for-about{
-        font-size: 20px;
+    .about-div{
+        font-size: 15px;
+        margin-left: 10px;
+        width: 450px;
+        
     }
-    .for-divs{
-        flex-direction: ;
+    .for-get{
+        padding-left: 30px; 
+        margin-top: 15px;
+        font-size: 15px;
+        width: 370px;
+        
     }
+   .projectparents{
+    margin-left: 70px;
+   }
+   .infos{
+    margin-left: 30px;
+   }
 }

@@ -27,20 +27,23 @@ const projects = [
       "A comprehensive dashboard for e-commerce buisnesses with analytics, inventory management, and order tracking features.",
     techstack: ["React", "Chart.js", "Node.js", "MongoDB"],
     images: "./images/1.jpeg",
+    // button: "View Project"
   },
   {
     title: "Weather Forecast App",
     descriptons:
       "A responsive weather application that provides accurate forecasts using data from a weather API with interactive maps.",
     techstack: ["javascript", "API integration", "CSS Grid", "Local Storage"],
-    images: "./images/2.jpeg"
+    images: "./images/2.jpeg",
+    // button: "View Project"
   },
    {
     title: "Task Management App",
     descriptons:
       "A productivity tool that helps users organize tasks, set deadlines, and track progress with drag-drop functionality.",
       techstack: ["React", "Redux", "Firebase", "Material UI"],
-      images: "./images/3.jpeg"
+      images: "./images/3.jpeg",
+      // button: "View Project"
   },
 ];
 const allprojects = projects.map(function (projects, index) {
