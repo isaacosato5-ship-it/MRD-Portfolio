@@ -294,7 +294,6 @@ button {
     position: static
 }
 .for-get{
-    width: 450px;
 }
 .infos{
     display: flex;
@@ -367,7 +366,7 @@ form{
         background-size: cover;
         background-position: center;
         position: relative;
-        width: 480px;
+        /* width: 480px; */
         z-index: -1;
     }
     .main{
@@ -383,6 +382,9 @@ form{
         font-size: 20px;
         margin: 70px;
         
+    }
+    .about-div{
+        margin: 10px;
     }
     .email, .message, .name{
         width: 200px;
@@ -403,22 +405,19 @@ form{
         margin: 0 auto;
     }
     .for-get{
-        /* padding: 50px;  */
         margin-top: 15px;
         font-size: 15px;
-        width: 400px;
         text-align: center;
         
     }
+    .for-view{
+        width: 100%;
+    }
     .stack{
-        margin: 0 auto;
+        padding: 0px 10px;
     }
    .projectparents{
     margin: 20px;
-    height: 500px;
     margin-top: 0;
-   }
-   .infos{
-    margin-left: 30px;
    }
 }
