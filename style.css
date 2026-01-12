@@ -225,6 +225,7 @@ button {
     border-radius: 10px;
     background-color: var(--primary-color);
     margin: 0 auto;
+    margin-top: 5px;
 }
 .for-box{
     height: 30px;
@@ -237,20 +238,34 @@ button {
     margin: 5px 10px 5px 10px;
 }
 .projects{
-    width: 330px;
-    height: 470px;
     border-radius: 10px;
     color: var(--text-color);
     padding: 20px;
+    text-align: center;
 }
 .for-image{
     border-radius: 10px 10px 0 0;
-    width: 300px;
+    width: 100%;
+    object-fit: cover;
     height: 200px;
 }
+
 .text-p{
     margin-left: 15px;
     color: var(--text-color);
+}
+.projectparents{
+   max-width: 300px;
+}
+.projects-cards-parent{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+}
+.about, .projects{
+    padding-top: 100px;
 }
 .skills{
      height: 30px;
@@ -264,6 +279,7 @@ button {
 }
 .parent{
     display: flex;
+    flex-wrap: wrap;
 }
 .for-ecom{
     color: var(--primary-color);
@@ -273,6 +289,29 @@ button {
 .for-view{
     border-radius: 5px;
     margin-top: 10px;
+}
+
+.contact {
+    position: static
+}
+.infos{
+    width: 450px;
+}
+.contact-icon{
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-item{
+    display: flex;
+    margin: 20px 0px 10px 15px;
+}
+.parenttitle{
+    text-align: center;
 }
 @media (max-width: 500px) {
     .hamburger {
@@ -294,7 +333,8 @@ button {
         z-index: -1;
     }
     .about{
-        margin: 25px;
+        /* margin: 25px; */
+        font-size: 15px;
     }
     .main{
        width: 100%;
