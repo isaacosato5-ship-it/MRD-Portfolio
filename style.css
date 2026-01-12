@@ -45,6 +45,7 @@ body{
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
 }
 header{
     display: flex;
@@ -58,7 +59,7 @@ header{
     position: fixed;
     top: 20px;
     cursor: pointer;
-    z-index: 3;
+    z-index: 99;
 }
 .main{
   width: 80%;
@@ -120,7 +121,7 @@ header{
 .mobilenav{
     position: fixed;
     height: 100vh;
-    width: 50%;
+    width: 80%;
     top: 0;
     right: 0;
     background-color: var(--background-color);
@@ -185,6 +186,7 @@ button {
     justify-content: center;
     height: 100%;
     gap: 30px;
+
 }
 .mobilenavlink{
     background-color: var(--border-color);
@@ -198,6 +200,79 @@ button {
 }
 .hidden{
     display: none;
+}
+.for-about{
+    text-align: center;
+    font-size: 40px;
+}
+.first-p{
+    margin: 10px 0px 25px 0px;
+}
+.second-p{
+    margin: 0px 0px 20px 0px;
+}
+.for-divs{
+   padding: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+  
+}
+.dash{
+    width: 75px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+}
+.for-box{
+    height: 30px;
+    width: 145px;
+    border-radius: 20px;
+    background-color: var(--surface-color);
+    text-align: center;
+    font-size: 12px;
+    padding: 5px; 
+    margin: 5px 10px 5px 10px;
+}
+.forprojects{
+    width: 330px;
+    height: 470px;
+    border-radius: 10px;
+    color: var(--text-color);
+    padding: 20px;
+}
+.for-image{
+    border-radius: 10px 10px 0 0;
+    width: 300px;
+    height: 200px;
+}
+.text-p{
+    margin-left: 15px;
+    color: var(--text-color);
+}
+.skills{
+     height: 30px;
+    width: 100px;
+    border-radius: 20px;
+   background-color: var(--card-bg);
+    text-align: center;
+    font-size: 12px;
+    padding: 5px; 
+    margin: 5px 10px 5px 10px;
+}
+.parent{
+    display: flex;
+}
+.for-ecom{
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: 0px 10px 50px 15px;
+}
+.for-view{
+    border-radius: 5px;
+    margin-top: 10px;
 }
 @media (max-width: 500px) {
     .hamburger {
@@ -220,5 +295,11 @@ button {
     }
     .main{
        width: 100%;
+    }
+    .for-about{
+        font-size: 20px;
+    }
+    .for-divs{
+        flex-direction: ;
     }
 }

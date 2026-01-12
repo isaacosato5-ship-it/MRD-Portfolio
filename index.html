@@ -26,6 +26,7 @@
         width="50"
       />
       <div class="navlinks">
+        <a class="navlink" href="#hero">Home</a>
         <a class="navlink" href="#about">About Me</a>
         <a class="navlink" href="#projects">Projects</a>
         <a class="navlink" href="#contact">Contact</a>
@@ -47,6 +48,7 @@
       </div>
       <div class="mobilenav hidden">
         <div class="mobilenavlinks">
+          <a class="mobilenavlink" href="#hero">Home</a>
           <a class="mobilenavlink" href="#about">About Me</a>
           <a class="mobilenavlink" href="#projects">Projects</a>
           <a class="mobilenavlink" href="#contact">Contact</a>
@@ -54,7 +56,7 @@
       </div>
     </header>
     <main class="main">
-      <div class="hero">
+      <section class="hero" id="hero">
         <div class="overlay"></div>
         <div class="leftHero">
           <h3 class="herotitle">
@@ -77,7 +79,58 @@
             class="me"
           />
         </div>
-      </div>
+      </section>
+      <section id="about" class="about">
+        <h2 class="for-about">About Me</h2>
+        <div class="dash"></div>
+        <p class="first-p">
+          I'm a passionate frontend developer with 3+ years of experience
+          building modern, responsive web applications. I specialize in HTML,
+          CSS, JavaScript, and React, and I'm always eager to learn new
+          technologies and improve my skills.
+        </p>
+        <p class="second-p">
+          My approach combines technical expertise with a keen eye for design,
+          ensuring that every project I work on is not only functional but also
+          visually appealing and user-friendly.
+        </p>
+        <p>
+          When I'm not coding, you can find me exploring new tech trends,
+          contributing to open-source projects, or hiking in nature to recharge
+          my creative energy.
+        </p>
+        <div class="for-divs">
+          <div class="for-box">HTML5</div>
+          <div class="for-box">CSS3</div>
+          <div class="for-box">JavaScript</div>
+          <div class="for-box">React</div>
+          <div class="for-box">TypeScript</div>
+          <div class="for-box">Responsive Design</div>
+          <div class="for-box">Git & GitHub</div>
+          <div class="for-box">UI/UX Design</div>
+        </div>
+      </section>
+      <section class="forprojects">
+        <div class="projectparents">
+          <img
+            src="images/WhatsApp Image 2026-01-11 at 10.41.59 PM.jpeg "
+            class="for-image"
+          />
+          <br />
+          <span class="for-ecom">E-Commerce Dashboard</span>
+          <p class="text-p">
+            A comprehensive dashboard for e-commerce buisnesses with analytics,
+            inventory management, and order tracking features.
+          </p>
+          <div class="parent">
+            <div class="skills">React</div>
+            <div class="skills">Chart.js</div>
+            <div class="skills">Node.js</div>
+            <div class="skills">MongoDB</div>
+          </div>
+        </div>
+        <button class="for-view">View Project</button>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>
