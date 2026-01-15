@@ -14,6 +14,7 @@
      --hambuger-color: black;
      --button-color: orange;
      --overlay-bg: rgba(255, 255, 255, 0.5);
+     --footer-bacground: whitesmoke;
 }
 .darkTheme {
     --primary-color: #818cf8;
@@ -31,6 +32,7 @@
      --hambuger-color: white;
      --button-color: #818cf8;
      --overlay-bg: rgba(0, 0, 0, 0.5);
+     --footer-bacground:  #162549;
 }
 * {
     box-sizing: border-box;
@@ -287,14 +289,14 @@ button {
 }
 .for-view{
     border-radius: 5px;
+    width: 100%;
     margin-top: 10px;
     margin: 0 auto;
 }
 .contact {
     position: static
 }
-.for-get{
-}
+
 .infos{
     display: flex;
     flex-wrap: wrap;
@@ -304,11 +306,11 @@ button {
 form{
 
    justify-content: space-between;
-   padding: 10px 0px 0px 25px;
+   /* padding: 10px 0px 0px 10px; */
    margin: 0px 0px 50px 0px;
    height: 250px;
    color: var(--text-color);
-   
+   /* border: 1px solid; */
 }
 .name, .email{
     width: 400px;
@@ -328,10 +330,9 @@ form{
     background-color: var(--surface-color);
     border:1px rgb(199, 193, 193);
     color: var(--text-color);
-
 }
-.stack{
-    /* display: flex; */
+.for-get{
+    width: 350px;
 }
 .contact-icon{
     border-radius: 50%;
@@ -346,8 +347,32 @@ form{
     display: flex;
     margin: 20px 0px 10px 15px;
 }
+.for-foot{
+    width: 100%;
+    height: 100px;
+    padding: 35px;
+    text-align: center;
+    background-color: var(--footer-bacground);
+    z-index: 99;
+}
 .parenttitle{
     text-align: center;
+}
+.stack{
+    margin-left: 120px;
+}
+.for-sent{
+    width: 150px;
+    height: 30px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 7px;
+
+}
+.contact-icon{
+    margin-right: 10px;
 }
 @media (max-width: 500px) {
     .hamburger {
@@ -366,7 +391,6 @@ form{
         background-size: cover;
         background-position: center;
         position: relative;
-        /* width: 480px; */
         z-index: -1;
     }
     .main{
@@ -397,9 +421,10 @@ form{
         border: 2px solid black;
         background-color: rgb(83, 77, 77);
         width: 250px;
-        height: 280px;
+        height: 300px;
         border-radius: 10px;
         margin: 0 auto;
+        padding: 25px;
     } 
     .dash{
         margin: 0 auto;
@@ -415,6 +440,7 @@ form{
     }
     .stack{
         padding: 0px 10px;
+        margin-left: 25px;
     }
    .projectparents{
     margin: 20px;
