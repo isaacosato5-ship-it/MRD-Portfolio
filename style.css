@@ -421,7 +421,7 @@ form{
         border: 2px solid black;
         background-color: rgb(83, 77, 77);
         width: 250px;
-        height: 300px;
+        height: 350px;
         border-radius: 10px;
         margin: 0 auto;
         padding: 25px;
@@ -432,8 +432,6 @@ form{
     .for-get{
         margin-top: 15px;
         font-size: 15px;
-        text-align: center;
-        
     }
     .for-view{
         width: 100%;
