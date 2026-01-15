@@ -371,6 +371,9 @@ form{
     margin-top: 7px;
 
 }
+.for-sent:hover{
+    background-color: #06b6d4;
+}
 .contact-icon{
     margin-right: 10px;
 }
