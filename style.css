@@ -435,7 +435,7 @@ form{
     .for-get{
         margin-top: 15px;
         font-size: 15px;
-        text-align: center;
+        width: 310px;
     }
     .for-view{
         width: 100%;
